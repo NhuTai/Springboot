@@ -19,7 +19,7 @@ public class CategoryController {
 
     @PostMapping(value = "/insert")
     public String insertCategory(@RequestBody JSONObject inputJson){
-        System.out.println(inputJson);
+        
         String name = (String)inputJson.get("name");
         Category c = new Category();
         c.setName(name);
